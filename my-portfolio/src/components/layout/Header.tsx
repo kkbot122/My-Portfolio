@@ -1,4 +1,3 @@
-
 const Header = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -14,7 +13,7 @@ const Header = () => {
           onClick={() => scrollToSection('hero')}
           className="text-gray-500 hover:text-gray-900 transition-colors text-sm"
         >
-          Hello
+          Home
         </button>
         <button 
           onClick={() => scrollToSection('projects')}
@@ -32,7 +31,7 @@ const Header = () => {
           onClick={() => scrollToSection('skills')}
           className="text-gray-500 hover:text-gray-900 transition-colors text-sm"
         >
-          Experience
+          Skills  
         </button>
       </nav>
     </header>

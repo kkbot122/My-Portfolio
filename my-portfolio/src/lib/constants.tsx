@@ -9,13 +9,28 @@ export const personalInfo = {
   twitter: "https://twitter.com/alexjohnson"
 }
 
-export const skills = [
-  { name: "React", level: 90 },
-  { name: "JavaScript", level: 85 },
-  { name: "TypeScript", level: 80 },
-  { name: "Tailwind CSS", level: 88 },
-  { name: "Node.js", level: 75 },
-  { name: "Python", level: 70 }
+export const frameworks = [
+  "React",
+  // "Next.js",
+  "Express.js",
+]
+
+export const tools = [
+  "Figma",
+  "Adobe Creative Suite",
+  "Git",
+  "Webpack",
+  "Vite",
+  "Docker"
+]
+
+export const languages = [
+  "JavaScript",
+  "TypeScript",
+  "Python",
+  "HTML/CSS",
+  "SQL",
+  "Java"
 ]
 
 export const projects = [
@@ -29,26 +44,26 @@ export const projects = [
     liveUrl: "https://zunj-sanstha.vercel.app/",
     featured: true
   },
-  {
-    id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates",
-    image: "/assets/images/project2.jpg",
-    technologies: ["React", "Firebase", "Material-UI"],
-    githubUrl: "https://github.com/alexjohnson/taskapp",
-    liveUrl: "https://taskapp-demo.com",
-    featured: true
-  },
-  {
-    id: 3,
-    title: "Weather Dashboard",
-    description: "Real-time weather information with beautiful visualizations",
-    image: "/assets/images/project3.jpg",
-    technologies: ["Vue.js", "Chart.js", "API Integration"],
-    githubUrl: "https://github.com/alexjohnson/weather",
-    liveUrl: "https://weather-demo.com",
-    featured: false
-  }
+  // {
+  //   id: 2,
+  //   title: "Task Management App",
+  //   description: "A collaborative task management application with real-time updates",
+  //   image: "/assets/images/project2.jpg",
+  //   technologies: ["React", "Firebase", "Material-UI"],
+  //   githubUrl: "https://github.com/alexjohnson/taskapp",
+  //   liveUrl: "https://taskapp-demo.com",
+  //   featured: true
+  // },
+  // {
+  //   id: 3,
+  //   title: "Weather Dashboard",
+  //   description: "Real-time weather information with beautiful visualizations",
+  //   image: "/assets/images/project3.jpg",
+  //   technologies: ["Vue.js", "Chart.js", "API Integration"],
+  //   githubUrl: "https://github.com/alexjohnson/weather",
+  //   liveUrl: "https://weather-demo.com",
+  //   featured: false
+  // }
 ]
 
 export const socialLinks = [

@@ -1,9 +1,9 @@
 export const personalInfo = {
-  name: "Alex Johnson",
-  title: "Frontend Developer",
-  email: "alex.johnson@example.com",
-  phone: "+1 (555) 123-4567",
-  location: "New York, NY",
+  name: "Kisna Kanti",
+  title: "Full Stack Developer",
+  email: "kisnakk1503@gmail.com",
+  phone: "+91 9811089519",
+  location: "PNQ, India",
   github: "https://github.com/alexjohnson",
   linkedin: "https://linkedin.com/in/alexjohnson",
   twitter: "https://twitter.com/alexjohnson"

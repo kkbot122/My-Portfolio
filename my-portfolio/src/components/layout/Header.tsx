@@ -33,6 +33,12 @@ const Header = () => {
         >
           Skills  
         </button>
+        <button 
+          onClick={() => scrollToSection('contact')}
+          className="text-gray-500 hover:text-gray-900 transition-colors text-sm"
+        >
+          Contact me  
+        </button>
       </nav>
     </header>
   );

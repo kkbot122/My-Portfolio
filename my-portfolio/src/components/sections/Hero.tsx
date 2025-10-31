@@ -9,14 +9,14 @@ const Hero = () => {
         </h1>
         
         <p className="text-gray-500 text-lg mb-2">
-          Currently a student at <span className="text-blue-600 font-medium">Google</span> Bangalore.
+          Currently a student at <span className="text-blue-700 font-medium">Symbiosis Institute of Technology</span> Pune.
         </p>
         
-        <p className="text-gray-400">
+        {/* <p className="text-gray-400">
           I previously solved for payment products at <span className="font-medium text-gray-600">Razorpay</span> + travel at <span className="font-medium text-gray-600">Scapia</span>.
           <br />
           I'm obsessed with human-AI partnership and purposeful tech, and I enjoy making user experience delightful.
-        </p>
+        </p> */}
       </div>
     </section>
   );

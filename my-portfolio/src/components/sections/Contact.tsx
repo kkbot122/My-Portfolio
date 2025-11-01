@@ -83,7 +83,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen px-6 py-20 bg-gray-50 dark:bg-[#000000] flex items-center transition-colors duration-300">
+    <section className="min-h-screen px-6 py-20 bg-[#F3EEEA] dark:bg-[#000000] flex items-center transition-colors duration-300">
       <div className="max-w-4xl mx-auto w-full">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900 dark:text-gray-100">Let's create something together</h2>
@@ -188,7 +188,7 @@ const Contact = () => {
         </Card>
 
         <div className="mt-12 text-center">
-          <p className="text-gray-500 dark:text-gray-400 text-sm">
+          <p className="text-[#1C352D] dark:text-gray-400 text-sm">
             Currently based in {personalInfo.location}
           </p>
         </div>

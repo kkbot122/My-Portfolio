@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="px-6 py-12 bg-white dark:bg-[#000000] border-t border-gray-100 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          Made with blood, sweat & tears by Kisna.
+          Made with <span className="text-[#ED3500] font-medium">blood</span>, <span className="text-[#57B4BA] font-medium">sweat</span> & <span className="text-[#1B56FD] font-medium">tears</span> by Kisna.
         </p>
         
         <div className="flex gap-6">

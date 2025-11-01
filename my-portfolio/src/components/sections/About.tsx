@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="min-h-screen px-6 py-20 bg-white dark:bg-[#000000] transition-colors duration-300">
+    <section className="min-h-screen px-6 py-20 bg-[#F3EEEA] dark:bg-[#000000] transition-colors duration-300">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl font-serif mb-12 text-gray-600 dark:text-gray-400">About me</h2>
         

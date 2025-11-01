@@ -1,5 +1,6 @@
 import { useTheme } from '../../contexts/ThemeContext';
 import { Sun, Moon } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const scrollToSection = (sectionId: string) => {
@@ -12,51 +13,57 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="fixed left-0 top-0 h-screen w-32 flex items-center justify-center z-50 dark:bg-[#000000] border-r dark:border-white">
+    <header className="fixed left-0 top-0 h-screen w-32 flex items-center justify-center z-50 dark:bg-[#000000] border-r dark:border-white transition-colors duration-300">
       <nav className="flex flex-col gap-6 items-center">
-        <button 
+        <Button 
+          variant="ghost"
           onClick={() => scrollToSection('hero')}
           className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
         >
           Home
-        </button>
-        <button 
+        </Button>
+        <Button 
+          variant="ghost"
           onClick={() => scrollToSection('projects')}
           className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
         >
           Work
-        </button>
-        <button 
+        </Button>
+        <Button 
+          variant="ghost"
           onClick={() => scrollToSection('about')}
           className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
         >
           About me
-        </button>
-        <button 
+        </Button>
+        <Button 
+          variant="ghost"
           onClick={() => scrollToSection('skills')}
           className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
         >
           Skills  
-        </button>
-        <button 
+        </Button>
+        <Button 
+          variant="ghost"
           onClick={() => scrollToSection('contact')}
           className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
         >
           Contact me  
-        </button>
+        </Button>
         
         {/* Dark Mode Toggle Button */}
-        <button
+        <Button
+          variant="ghost"
           onClick={toggleTheme}
-          className="mt-8 p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+          className="mt-8 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
           aria-label="Toggle dark mode"
         >
           {theme === 'light' ? (
-            <Moon size={18} className="text-gray-700" />
+            <Moon size={18} className="text-gray-700 dark:text-gray-300" />
           ) : (
             <Sun size={18} className="text-yellow-400" />
           )}
-        </button>
+        </Button>
       </nav>
     </header>
   );

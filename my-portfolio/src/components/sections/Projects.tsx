@@ -3,9 +3,9 @@ import { projects } from '@/lib/constants';
 
 const Projects = () => {
   return (
-    <section className="min-h-screen px-6 py-16 bg-[#F3EEEA] dark:bg-[#000000] transition-colors duration-300">
+    <section className="min-h-screen px-6 py-16 dark:bg-[#000000] transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-serif mb-5 text-gray-900 dark:text-[#FFE8DB]">Key projects</h2>
+        <h2 className="text-3xl font-serif mb-5 text-[#000000] dark:text-[#FFFFFF]">Key projects</h2>
         
         <div className="space-y-12">
           {projects.map((project) => (

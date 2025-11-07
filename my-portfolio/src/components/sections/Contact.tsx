@@ -83,7 +83,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen px-6 py-20 bg-[#F3EEEA] dark:bg-[#000000] flex items-center transition-colors duration-300">
+    <section className="min-h-screen px-6 py-20 dark:bg-[#000000] flex items-center transition-colors duration-300">
       <div className="max-w-4xl mx-auto w-full">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif mb-6 text-gray-900 dark:text-gray-100">Let's create something together</h2>
@@ -162,7 +162,7 @@ const Contact = () => {
               <Button
                 type="submit"
                 disabled={!formData.name || !formData.email || !formData.message || loading}
-                className="px-12 py-6 bg-gray-900 dark:bg-red-600 hover:bg-gray-800 dark:hover:bg-red-700 text-white dark:text-white font-medium rounded disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                className="px-12 py-6 bg-[#DC0E0E] dark:bg-red-600 hover:bg-[#FF5656] dark:hover:bg-red-700 text-white dark:text-white font-medium rounded disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
               >
                 {loading ? (
                   <div className="flex items-center gap-2">

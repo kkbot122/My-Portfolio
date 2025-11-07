@@ -26,9 +26,9 @@ const Skills = () => {
   ];
 
   return (
-    <section className="min-h-screen px-6 py-20 bg-[#F3EEEA] dark:bg-[#000000] transition-colors duration-300">
+    <section className="min-h-screen px-6 py-20 dark:bg-[#000000] transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-serif mb-16 text-center text-gray-900 dark:text-gray-100">Skills & Technologies</h2>
+        <h2 className="text-3xl font-serif mb-16 text-left text-[#000000] dark:text-gray-100">Skills & Technologies</h2>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0">
           {skills.map((skill, index) => (

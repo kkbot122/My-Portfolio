@@ -38,7 +38,7 @@ export const projects = [
     id: 1,
     title: "NGO Donation/Volunteer Platform",
     description: "A full-stack donation & volunteer management solution with React and Node.js",
-    image: "/Zunj-ngo-home.png",
+    image: "/Zunj-Ngo.png",
     technologies: ["React", "Node.js", "Supabase", "Tailwind"],
     githubUrl: "https://github.com/kkbot122/Jhung-NGO-website-Final",
     liveUrl: "https://zunj-sanstha.vercel.app/",

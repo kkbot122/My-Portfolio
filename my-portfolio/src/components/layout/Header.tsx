@@ -1,8 +1,12 @@
 import { useTheme } from '../../contexts/ThemeContext';
 import { Sun, Moon } from 'lucide-react';
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '../ui/button';
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -12,60 +16,105 @@ const Header = () => {
 
   const { theme, toggleTheme } = useTheme();
 
+  const handleResumeClick = () => {
+    window.open('/Kisna_Resume_25 (1).pdf', '_blank', 'noopener,noreferrer');
+  };
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
-    <header className="fixed left-0 top-0 h-screen w-32 flex items-center justify-center z-50 dark:bg-[#000000] border-r dark:border-white transition-colors duration-300">
+    <motion.header 
+      className="fixed left-0 top-0 h-screen w-32 flex items-center justify-center z-50 bg-white dark:bg-black transition-colors duration-300"
+      initial={{ opacity: 0, x: -30 }}
+      animate={{ 
+        opacity: isVisible ? 1 : 0, 
+        x: isVisible ? 0 : -30 
+      }}
+      transition={{ 
+        duration: 0.6, 
+        delay: 0.3,
+        ease: "easeOut" 
+      }}
+    >
       <nav className="flex flex-col gap-6 items-center">
+        {/* Home Button */}
         <Button 
-          variant="ghost"
+          variant="ghost" 
+          size="default"
           onClick={() => scrollToSection('hero')}
-          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
+          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
         >
           Home
         </Button>
+
+        {/* Work Button */}
         <Button 
-          variant="ghost"
+          variant="ghost" 
+          size="default"
           onClick={() => scrollToSection('projects')}
-          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
+          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
         >
           Work
         </Button>
+
+        {/* About me Button */}
         <Button 
-          variant="ghost"
+          variant="ghost" 
+          size="default"
           onClick={() => scrollToSection('about')}
-          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
+          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
         >
           About me
         </Button>
+
+        {/* Skills Button */}
         <Button 
-          variant="ghost"
+          variant="ghost" 
+          size="default"
           onClick={() => scrollToSection('skills')}
-          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
+          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
         >
-          Skills  
+          Skills
         </Button>
+
+        {/* Contact me Button */}
         <Button 
-          variant="ghost"
+          variant="ghost" 
+          size="default"
           onClick={() => scrollToSection('contact')}
-          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors text-sm"
+          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
         >
-          Contact me  
+          Contact me
+        </Button>
+
+        {/* Resume Button */}
+        <Button 
+          variant="ghost" 
+          size="default"
+          onClick={handleResumeClick}
+          className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
+        >
+          Resume
         </Button>
         
-        {/* Dark Mode Toggle Button */}
-        <Button
-          variant="ghost"
+        {/* Dark Mode Toggle Button - Using icon size */}
+        <Button 
+          variant="ghost" 
+          size="icon"
           onClick={toggleTheme}
-          className="mt-8 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          className="mt-8 hover:bg-gray-200 dark:hover:bg-gray-800"
           aria-label="Toggle dark mode"
         >
           {theme === 'light' ? (
-            <Moon size={18} className="text-gray-700 dark:text-gray-300" />
+            <Moon size={18} className="text-[#DC0E0E] dark:text-gray-300" />
           ) : (
-            <Sun size={18} className="text-yellow-400" />
+            <Sun size={18} className="text-[#DC0E0E]" />
           )}
         </Button>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 

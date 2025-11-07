@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <section className="min-h-screen px-6 py-20 bg-[#F3EEEA] dark:bg-[#000000] transition-colors duration-300">
+    <section className="min-h-screen px-6 py-20 dark:bg-[#000000] transition-colors duration-300">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-3xl font-serif mb-12 text-gray-600 dark:text-gray-400">About me</h2>
+        <h2 className="text-3xl font-serif mb-12 text-[#000000] dark:text-[#FFFFFF]">About me</h2>
         
         <div className="space-y-8">
           <h3 className="text-4xl font-serif leading-tight text-gray-900 dark:text-gray-100">
@@ -15,8 +15,7 @@ const About = () => {
           </p>
 
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-            My interests often lead me to experiment with AI-driven interfaces and playful digital systems, projects where creativity meets logic. 
-            I care deeply about how people interact with what they see on screen and how subtle details change that interaction.
+            I love tinkering with AI-driven interfaces and quirky digital experiments where logic wears a creative hat. Lately, data analytics has caught my curiosity I’d love to turn that fascination into something real.
           </p>
 
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">

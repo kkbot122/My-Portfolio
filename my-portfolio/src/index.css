@@ -5,6 +5,29 @@
 body {
   font-family: 'Inter', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar for the main container */
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #ED3500 transparent;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #ED3500;
+  border-radius: 3px;
 }
 
 h1, h2, h3, .font-serif {
@@ -12,6 +35,8 @@ h1, h2, h3, .font-serif {
 }
 
 html {
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -57,4 +82,38 @@ body {
 /* Optional: Add custom font classes for DM Serif Text */
 .font-dm-serif {
   font-family: 'DM Serif Text', serif;
+}
+
+:root {
+  --accent: #DC0E0E;
+  --primary: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #1f2937;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --transparent: transparent;
+}
+
+.dark {
+  --accent: #DC0E0E;
+  --primary: #ffffff;
+  --secondary: #374151;
+  --secondary-foreground: #f9fafb;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --transparent: transparent;
+}
+
+@theme inline {
+  @keyframes char-scale {
+  0% {
+    scale: 1 0.1;
+    }
+  50% {
+    scale: 1 var(--max-scale);
+    }
+  100% {
+    scale: 1 0.1;
+    }
+  }
 }

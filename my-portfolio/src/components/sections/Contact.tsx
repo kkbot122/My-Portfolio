@@ -104,25 +104,25 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="bg-gray-50 dark:bg-[#FBF6E2] border-gray-200 dark:border-gray-600 focus:border-gray-400 dark:focus:border-gray-500 focus:ring-0 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 transition-colors duration-200"
+                  className="bg-gray-50 dark:bg-[#FFFFFF] border-gray-200 dark:border-gray-600 focus:border-gray-400 dark:focus:border-gray-500 focus:ring-0 text-gray-900 dark:text-[#000000] placeholder:text-gray-400 dark:placeholder:text-gray-500 transition-colors duration-200"
                   required
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Your Email
-                </label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="bg-gray-50 dark:bg-[#FBF6E2] border-gray-200 dark:border-gray-600 focus:border-gray-400 dark:focus:border-gray-500 focus:ring-0 text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 transition-colors duration-200"
-                  required
-                />
-              </div>
+  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+    Your Email
+  </label>
+  <Input
+    id="email"
+    name="email"
+    type="email"
+    value={formData.email}
+    onChange={handleChange}
+    className="bg-gray-50 dark:bg-[#FFFFFF] border-gray-200 dark:border-gray-600 focus:border-gray-400 dark:focus:border-gray-500 focus:ring-0 text-gray-900 dark:text-[#000000] placeholder:text-gray-400 dark:placeholder:text-gray-500 transition-colors duration-200"
+    required
+  />
+</div>
             </div>
 
             <div>
@@ -135,7 +135,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={6}
-                className="bg-gray-50 dark:bg-[#FBF6E2] border-gray-200 dark:border-gray-600 focus:border-gray-400 dark:focus:border-gray-500 focus:ring-0 resize-none text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 transition-colors duration-200"
+                className="bg-gray-50 dark:bg-[#FFFFFF] border-gray-200 dark:border-gray-600 focus:border-gray-400 dark:focus:border-gray-500 focus:ring-0 text-gray-900 dark:text-[#000000] placeholder:text-gray-400 dark:placeholder:text-gray-500 transition-colors duration-200"
                 required
               />
             </div>
@@ -188,7 +188,7 @@ const Contact = () => {
         </Card>
 
         <div className="mt-12 text-center">
-          <p className="text-[#1C352D] dark:text-gray-400 text-sm">
+          <p className="text-[#1C352D] dark:text-[#FFFFFF] text-sm">
             Currently based in {personalInfo.location}
           </p>
         </div>

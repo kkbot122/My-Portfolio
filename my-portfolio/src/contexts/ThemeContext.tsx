@@ -13,16 +13,18 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
-    // On page load, read the theme from localStorage or system preference
-    if (localStorage.theme === 'dark' || 
-        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setTheme('dark');
-      document.documentElement.classList.add('dark');
-    } else {
-      setTheme('light');
-      document.documentElement.classList.remove('dark');
-    }
-  }, []);
+  // On page load, default to light mode unless explicitly saved as dark
+  if (localStorage.theme === 'dark') {
+    setTheme('dark');
+    document.documentElement.classList.add('dark');
+  } else {
+    // Default to light mode (even if no theme in localStorage or system prefers dark)
+    setTheme('light');
+    document.documentElement.classList.remove('dark');
+    // Optionally save light theme to localStorage to persist the choice
+    localStorage.setItem('theme', 'light');
+  }
+}, []);
 
   const toggleTheme = () => {
     if (theme === 'light') {

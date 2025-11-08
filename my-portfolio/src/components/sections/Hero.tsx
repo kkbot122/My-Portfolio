@@ -18,6 +18,7 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20 dark:bg-[#000000] transition-colors duration-300 overflow-hidden relative">
+    
       <div className="max-w-2xl relative z-10 text-[#000000] dark:text-[#FFFFFF]">
         <h1
           className={`text-5xl md:text-6xl font-serif mb-6 leading-tight transform transition-all duration-1000 ${

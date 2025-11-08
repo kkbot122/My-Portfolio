@@ -31,12 +31,12 @@ const GlobalScrollLine = () => {
     >
       <svg
         width="2400"
-        height="1000"
+        height="2200"
         viewBox="0 0 1278 2319"
         fill="none"
         overflow="visible"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -right-[40%] top-0"
+        className="absolute -top-[40%] left-1/2 -translate-x-1/2"
       >
         <defs>
           <linearGradient id="scrollGradient" x1="0%" y1="0%" x2="100%" y2="100%">

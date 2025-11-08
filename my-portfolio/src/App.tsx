@@ -1,5 +1,5 @@
 // App.tsx
-import { CursorProvider, Cursor, CursorFollow } from './components/ui/index'; // Adjust import path
+import { CursorProvider, Cursor} from './components/ui/index'; // Adjust import path
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';

@@ -39,15 +39,32 @@ const Header = () => {
       }}
     >
       <nav className="flex flex-col gap-6 items-center">
+        {/* Logo */}
+        <motion.div 
+          className="mb-8 cursor-pointer"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          onClick={() => scrollToSection('hero')}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <img 
+            src="/kisna-logo.png" 
+            alt="Kisna Logo" 
+            className="w-12 h-12 rounded-lg object-contain hover:opacity-80 transition-opacity dark:invert dark:brightness-10"
+          />
+        </motion.div>
+
         {/* Home Button */}
-        <Button 
+        {/* <Button 
           variant="ghost" 
           size="default"
           onClick={() => scrollToSection('hero')}
           className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
         >
           Home
-        </Button>
+        </Button> */}
 
         {/* Work Button */}
         <Button 
@@ -99,7 +116,7 @@ const Header = () => {
           Resume
         </Button>
         
-        {/* Dark Mode Toggle Button - Using icon size */}
+        {/* Dark Mode Toggle Button */}
         <Button 
           variant="ghost" 
           size="icon"

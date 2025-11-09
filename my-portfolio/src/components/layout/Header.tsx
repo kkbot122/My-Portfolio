@@ -17,7 +17,7 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   const handleResumeClick = () => {
-    window.open('/Kisna_Resume_25 (1).pdf', '_blank', 'noopener,noreferrer');
+    window.open('/Resume.Kisna.pdf', '_blank', 'noopener,noreferrer');
   };
 
   useEffect(() => {

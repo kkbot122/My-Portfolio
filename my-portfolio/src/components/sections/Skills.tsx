@@ -26,18 +26,22 @@ const Skills = () => {
   ];
 
   return (
-    <section className="min-h-screen px-6 py-20 dark:bg-[#000000] transition-colors duration-300">
+    <section className="min-h-screen px-4 sm:px-6 py-12 sm:py-20 dark:bg-[#000000] transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-serif mb-16 text-left text-[#000000] dark:text-gray-100">Skills & Technologies</h2>
+        <h2 className="text-2xl sm:text-3xl font-serif mb-8 sm:mb-16 text-left text-[#000000] dark:text-gray-100">
+          Skills & Technologies
+        </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0">
+        {/* Grid: 3 columns on mobile, 4 on tablet, 5 on desktop */}
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-0">
           {skills.map((skill, index) => (
             <Card 
               key={index}
               className="border border-gray-200 dark:border-gray-700 rounded-none hover:shadow-lg dark:hover:shadow-gray-950 hover:z-10 transition-all duration-300 group cursor-pointer aspect-square bg-white dark:bg-[#212121]"
             >
-              <div className="h-full p-8 flex flex-col items-center justify-center gap-4">
-                <div className="w-16 h-16 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+              <div className="h-full p-4 sm:p-6 md:p-8 flex flex-col items-center justify-center gap-2 sm:gap-3 md:gap-4">
+                {/* Icon - Responsive sizing */}
+                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                   <img 
                     src={skill.logo}
                     alt={skill.name}
@@ -49,7 +53,8 @@ const Skills = () => {
                     className="w-full h-full object-contain hidden dark:block"
                   />
                 </div>
-                <h3 className="text-sm text-gray-700 dark:text-gray-300 text-center font-medium">
+                {/* Text - Smaller on mobile */}
+                <h3 className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center font-medium leading-tight">
                   {skill.name}
                 </h3>
               </div>
@@ -57,8 +62,8 @@ const Skills = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center">
-          <p className="text-gray-500 dark:text-gray-400 text-sm">
+        <div className="mt-8 sm:mt-16 text-center">
+          <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm px-4">
             And many more tools & technologies in my toolkit
           </p>
         </div>

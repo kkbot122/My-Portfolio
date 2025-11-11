@@ -2,26 +2,18 @@ import { Typewriter } from "@/components/ui/typewriter-text";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  // const [setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-
-    // const handleMouseMove = (e: MouseEvent) => {
-    //   setMousePosition({ x: e.clientX, y: e.clientY });
-    // };
-
-    // window.addEventListener("mousemove", handleMouseMove);
-    // return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 dark:bg-[#000000] transition-colors duration-300 overflow-hidden relative">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 py-20 dark:bg-[#000000] transition-colors duration-300 overflow-hidden relative">
     
       <div className="max-w-2xl relative z-10 text-[#000000] dark:text-[#FFFFFF]">
         <h1
-          className={`text-5xl md:text-6xl font-serif mb-6 leading-tight transform transition-all duration-1000 ${
+          className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight transform transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
@@ -39,7 +31,7 @@ const Hero = () => {
               ]}
               speed={100}
               loop={true}
-              className="text-5xl md:text-6xl font-serif"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif"
             />
           </span>
         </h1>
@@ -49,17 +41,16 @@ const Hero = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <p className="text-lg mb-2 leading-relaxed">
+          <p className="text-base sm:text-lg mb-2 leading-relaxed">
             Currently a{" "}
             <span className="text-[#ED3500] font-medium relative inline-block group/cs">
               CS major
             </span>{" "}
             at{" "}
-              Symbiosis Institute of Technology
-            Pune.
+            Symbiosis Institute of Technology Pune.
           </p>
 
-          <p className="leading-relaxed opacity-90">
+          <p className="text-sm sm:text-base leading-relaxed opacity-90">
             Avid learner and tech enthusiast passionate about AI, web
             development, and UX design.
             <br />
@@ -68,8 +59,6 @@ const Hero = () => {
           </p>
         </div>       
       </div>
-
-      
     </section>
   );
 };

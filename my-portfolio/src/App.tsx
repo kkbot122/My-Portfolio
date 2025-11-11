@@ -26,7 +26,7 @@ function App() {
             </Cursor>
             
             <Header />
-            <main className="ml-32 relative z-10">
+            <main className="ml-0 md:ml-32 relative z-10">
               <div id="hero"><Hero /></div>
               <div id="projects"><Projects /></div>
               <div id="about"><About /></div>

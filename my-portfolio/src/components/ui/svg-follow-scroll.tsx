@@ -10,16 +10,16 @@ interface ScrollLineProps {
   children: React.ReactNode;
 }
 
-const ScrollLineSection = ({ 
-  className = "", 
-  strokeColor = "#C2F84F", 
+const ScrollLineSection = ({
+  className = "",
+  strokeColor = "#C2F84F",
   strokeWidth = 20,
-  children 
+  children,
 }: ScrollLineProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"] // Triggers when section enters and leaves viewport
+    offset: ["start end", "end start"], // Triggers when section enters and leaves viewport
   });
 
   return (
@@ -30,7 +30,7 @@ const ScrollLineSection = ({
       <div className="relative z-10 h-full flex items-center justify-center">
         {children}
       </div>
-      
+
       <LinePath
         scrollYProgress={scrollYProgress}
         strokeColor={strokeColor}

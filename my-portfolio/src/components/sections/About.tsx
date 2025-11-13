@@ -29,7 +29,7 @@ const About = () => {
                   full-stack development
                 </span>
                 , where I enjoy turning ideas into interactive, functional
-                products. Along with growing expertise in{" "}
+                products, along with growing expertise in{" "}
                 <span className="font-semibold text-gray-900 dark:text-white">
                   DevOps
                 </span>{" "}

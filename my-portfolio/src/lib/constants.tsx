@@ -34,8 +34,17 @@ export const languages = [
 ]
 
 export const projects = [
+    {id: 1,
+    title: "AI Powered Logo Generator",
+    description: "An in progress AI-powered logo generation web application that leverages Cloudflare's AI capabilities to create unique logos based on user input and preferences. Logo generation is followed by an indepth brand identity document that highlights the brand's core values, target audience, and visual elements.",
+    image: "/Aura-logo.png",
+    technologies: ["Next.Js", "Supabase", "Cloudflare-Workers-Ai", "Groq Playground"],
+    githubUrl: "https://github.com/kkbot122/Aura",
+    liveUrl: "",
+    featured: true
+  },
   {
-    id: 1,
+    id: 2,
     title: "NGO Donation/Volunteer Platform",
     description: "A full-stack donation & volunteer management solution with React and Node.js",
     image: "/Zunj-Ngo.png",
@@ -45,15 +54,7 @@ export const projects = [
     featured: true
   },
   // {
-  //   id: 2,
-  //   title: "Task Management App",
-  //   description: "A collaborative task management application with real-time updates",
-  //   image: "/assets/images/project2.jpg",
-  //   technologies: ["React", "Firebase", "Material-UI"],
-  //   githubUrl: "https://github.com/alexjohnson/taskapp",
-  //   liveUrl: "https://taskapp-demo.com",
-  //   featured: true
-  // },
+  
   // {
   //   id: 3,
   //   title: "Weather Dashboard",

@@ -18,6 +18,7 @@ const Hero = () => {
           }`}
         >
           <span className="inline-block">
+            Namaste! <br  />
             I'm Kisna Kanti,
           </span>
           <br />
@@ -27,7 +28,7 @@ const Hero = () => {
                 "Web Developer",
                 "Tech Innovator",
                 "AI Enthusiast",
-                "Chief Prompt Officer",
+                "Vibe Coder",
               ]}
               speed={100}
               loop={true}

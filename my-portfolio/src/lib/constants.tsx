@@ -34,7 +34,18 @@ export const languages = [
 ]
 
 export const projects = [
-    {id: 1,
+  {
+    id: 1,
+    title: "Analyz",
+    description: "A robust product analytics SaaS that enables developers to track user behavior via a custom-built SDK. Features a secure multi-tenant architecture for managing organizations, projects, and team members, integrated with Courier for seamless email invitations and onboarding.",
+    image: "/Analyz.png",
+    technologies: ["Nextjs", "Prisma", "Courier", "PostgreSQL", "Neon"],
+    githubUrl: "https://github.com/kkbot122/Analyz",
+    liveUrl: "https://analyz-product-analytics.vercel.app/",
+    featured: false
+  },
+  {
+    id: 2,
     title: "AI Powered Logo Generator",
     description: "An in progress AI-powered logo generation web application that leverages Cloudflare's AI capabilities to create unique logos based on user input and preferences. Logo generation is followed by an indepth brand identity document that highlights the brand's core values, target audience, and visual elements.",
     image: "/Aura-logo.png",
@@ -44,7 +55,7 @@ export const projects = [
     featured: true
   },
   {
-    id: 2,
+    id: 3,
     title: "NGO Donation/Volunteer Platform",
     description: "A full-stack donation & volunteer management solution with React and Node.js",
     image: "/Zunj-Ngo.png",
@@ -52,20 +63,8 @@ export const projects = [
     githubUrl: "https://github.com/kkbot122/Jhung-NGO-website-Final",
     liveUrl: "https://zunj-sanstha.vercel.app/",
     featured: true
-  },
-  // {
-  
-  // {
-  //   id: 3,
-  //   title: "Weather Dashboard",
-  //   description: "Real-time weather information with beautiful visualizations",
-  //   image: "/assets/images/project3.jpg",
-  //   technologies: ["Vue.js", "Chart.js", "API Integration"],
-  //   githubUrl: "https://github.com/alexjohnson/weather",
-  //   liveUrl: "https://weather-demo.com",
-  //   featured: false
-  // }
-]
+  }
+];
 
 export const socialLinks = [
   { name: "GitHub", url: "https://github.com/alexjohnson", icon: "github" },

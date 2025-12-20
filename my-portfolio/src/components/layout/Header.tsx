@@ -19,7 +19,7 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   const handleResumeClick = () => {
-    window.open("/Resume.KisnaKanti.pdf", "_blank", "noopener,noreferrer");
+    window.open("/Resume.Kisna.v2.pdf", "_blank", "noopener,noreferrer");
     setIsMobileMenuOpen(false);
   };
 
@@ -100,21 +100,6 @@ const Header = () => {
             className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white text-sm"
           >
             Resume
-          </Button>
-
-          {/* Dark Mode Toggle Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleTheme}
-            className="mt-8 hover:bg-gray-200 dark:hover:bg-gray-800"
-            aria-label="Toggle dark mode"
-          >
-            {theme === "light" ? (
-              <Moon size={18} className="text-[#DC0E0E] dark:text-gray-300" />
-            ) : (
-              <Sun size={18} className="text-[#DC0E0E]" />
-            )}
           </Button>
         </nav>
       </motion.header>

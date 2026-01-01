@@ -50,7 +50,7 @@ export const projects = [
     description: "AI-powered logo generation web application that leverages huggingface AI models to create unique logos based on user input and preferences. The AI is provided with a curated list of open source typography fonts. A special algorithm is used to set the colour pallet for the brand and logo. Logo generation is followed by an in-depth brand identity document that highlights the brand's core values, target audience, and visual elements.",
     image: "/aura-home.png",
     technologies: ["Next.Js", "PostgreSQL", "HuggingFace", "Groq Playground", "Redis"],
-    githubUrl: "https://github.com/kkbot122/Aura",
+    githubUrl: "https://github.com/kkbot122/Logo-generator",
     liveUrl: "https://logo-generator-v1.vercel.app",
     featured: true
   },

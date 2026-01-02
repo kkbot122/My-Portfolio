@@ -19,7 +19,7 @@ const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   const handleResumeClick = () => {
-    window.open("/Resume.Kisna.v2.pdf", "_blank", "noopener,noreferrer");
+    window.open("/Resume.Kisna.v4.pdf", "_blank", "noopener,noreferrer");
     setIsMobileMenuOpen(false);
   };
 

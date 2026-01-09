@@ -16,6 +16,10 @@ const Skills = () => {
     },
     { name: "React", logo: "https://cdn.simpleicons.org/react/61DAFB" },
     {
+      name: "JavaScript",
+      logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
+    },
+    {
       name: "TypeScript",
       logo: "https://cdn.simpleicons.org/typescript/3178C6",
     },
@@ -49,6 +53,10 @@ const Skills = () => {
       darkLogo: "https://cdn.simpleicons.org/vercel/FFFFFF",
     },
     {
+      name: "Render",
+      logo: "https://cdn.simpleicons.org/render/46E3B7",
+    },
+    {
       name: "Cloudflare",
       logo: "https://cdn.simpleicons.org/cloudflare/F38020",
     }, // Shortened name for better fit
@@ -59,6 +67,10 @@ const Skills = () => {
       name: "Pandas",
       logo: "https://cdn.simpleicons.org/pandas/150458",
       darkLogo: "https://cdn.simpleicons.org/pandas/FFFFFF",
+    },
+    {
+      name: "NumPy",
+      logo: "https://cdn.simpleicons.org/numpy/013243",
     },
     {
       name: "Scikit-Learn",
